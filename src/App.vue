@@ -22,7 +22,7 @@
               Free!
             </h1>
             <a>
-              <button @click="changeFormVisible" class="hero-btn"> Book Kerb™ </button>
+              <button v-if="!formVisible" @click="changeFormVisible" class="hero-btn"> Book Kerb™ </button>
             </a>
           </div>
           <div class="col-sm-6 col-sm-6 ipad">
@@ -35,7 +35,7 @@
     <div v-if="formVisible" class="formbg row">
       <h2 class="features-headline text-center" style="padding-bottom: 20px;">Book Kerb™</h2>
       <form action="#" class="col-sm-12 col-md-8 col-md-offset-2">
-        <div class="step1 col-sm-12 col-md-6 col-md-offset-3">
+        <div v-if="formStep == 1" class="col-sm-12 col-md-6 col-md-offset-3">
           <div class="col-sm-12"><h2>Step #1</h2></div>
           <div class="col-sm-12 col-md-12">
             <div class="row">
@@ -116,35 +116,16 @@
           </div>
         </div>
       
-        <div class="step2 col-sm-12 col-md-6 col-md-offset-3">
+        <div v-if="formStep == 2" class="col-sm-12 col-md-6 col-md-offset-3">
           <div class="col-sm-12"><h2>Step #2</h2></div>
           <div class="col-sm-12">
             <label># of Men</label>
             <div class="men-buttons row">
-              <a>
+              <a v-for="(price, movers) in availability.prices" :key="movers" :class="{ 'dis-but': parseInt(availability.movers.am_left) < movers || parseInt(availability.movers.pm_left) < movers }">
                 <div class="col-sm-12 col-md-4 text-center">
                   <div class="mbutton">
-                    <h2><i class="fa fa-user-o"></i>02<span>movers</span></h2>
-                    <h3><span>$</span>210<span>/hr</span></h3>
-                    <h2><span>3 hours<br>minimum charge</span></h2>
-                  </div>
-                </div>
-              </a>
-              <a>
-                <div class="col-sm-12 col-md-4 text-center">
-                  <div class="mbutton">
-                    <h2><i class="fa fa-user-o"></i>03<span>movers</span></h2>
-                    <h3><span>$</span>245<span>/hr</span></h3>
-                    <h2><span>3 hours<br>minimum charge</span></h2>
-                  </div>
-                </div>
-              </a>
-              <a class="dis-but">
-                <div class="col-sm-12 col-md-4 text-center">
-                  <div class="mbutton">
-                    <h2><i class="fa fa-user-o"></i>04<span>movers</span></h2>
-                    <h3><span>$</span>290<span>/hr</span></h3>
-                    <h2><span>3 hours<br>minimum charge</span></h2>
+                    <h2><i class="fa fa-user-o"></i>{{ movers }}<span>movers</span></h2>
+                    <h3><span>$</span>{{ price }}<span>/hr</span></h3>
                   </div>
                 </div>
               </a>
@@ -164,14 +145,14 @@
             <input id="total" name="total" class="book-form2" value="$265" readonly>
           </div>
           <div class="col-sm-12 col-md-6 text-left">
-            <input type="submit" class="book-next" id="hide" value="< prev step">
+            <!-- <button @click="changeStep(1)" type="button" class="book-next">< prev step</button> -->
           </div>
           <div class="col-sm-12 col-md-6 text-right">
-            <input type="submit" class="book-next" id="show2" value="next step >">
+            <button type="button" class="book-next">next step ></button>
           </div>
         </div>
       
-        <div class="step3 col-sm-12 col-md-6 col-md-offset-3">
+        <div v-if="formStep == 3" class="col-sm-12 col-md-6 col-md-offset-3">
           <div class="col-sm-12"><h2>Step #3</h2></div>
           <div class="col-sm-12 col-md-6">
             <label>First Name</label>
@@ -367,7 +348,6 @@ export default {
   data: () => ({
     form: {
       pickUp: {
-        set: false,
         full: '',
         address: '',
         apt: '',
@@ -376,7 +356,6 @@ export default {
         zip: ''
       },
       adtPickUp: {
-        set: false,
         full: '',
         address: '',
         apt: '',
@@ -385,7 +364,6 @@ export default {
         zip: ''
       },
       dropOff: {
-        set: false,
         full: '',
         address: '',
         apt: '',
@@ -394,7 +372,6 @@ export default {
         zip: ''
       },
       adtDropOff: {
-        set: false,
         full: '',
         address: '',
         apt: '',
@@ -410,6 +387,8 @@ export default {
       email: ''
     },
     formVisible: false,
+    formStep: null,
+    availability: null,
     adtPickUp: false,
     adtDropOff: false,
     validationMessage: '',
@@ -422,7 +401,6 @@ export default {
 
   methods: {
     setPickUp (addressData, placeResultData, id) {
-      this.form.pickUp.set = true
       this.form.pickUp.address = addressData.street_number + ' ' + addressData.route
       this.form.pickUp.city = addressData.locality
       this.form.pickUp.state = addressData.administrative_area_level_1
@@ -430,7 +408,6 @@ export default {
     },
 
     keypressPickUp () {
-      this.form.pickUp.set = false
       this.form.pickUp.address = ''
       this.form.pickUp.city = ''
       this.form.pickUp.state = ''
@@ -438,7 +415,6 @@ export default {
     },
 
     setAdtPickUp (addressData, placeResultData, id) {
-      this.form.adtPickUp.set = true
       this.form.adtPickUp.address = addressData.street_number + ' ' + addressData.route
       this.form.adtPickUp.city = addressData.locality
       this.form.adtPickUp.state = addressData.administrative_area_level_1
@@ -446,7 +422,6 @@ export default {
     },
 
     keypressAdtPickUp () {
-      this.form.adtPickUp.set = false
       this.form.adtPickUp.address = ''
       this.form.adtPickUp.city = ''
       this.form.adtPickUp.state = ''
@@ -454,7 +429,6 @@ export default {
     },
 
     setAdtDropOff (addressData, placeResultData, id) {
-      this.form.adtDropOff.set = true
       this.form.adtDropOff.address = addressData.street_number + ' ' + addressData.route
       this.form.adtDropOff.city = addressData.locality
       this.form.adtDropOff.state = addressData.administrative_area_level_1
@@ -462,7 +436,6 @@ export default {
     },
 
     keypressAdtDropOff () {
-      this.form.adtDropOff.set = false
       this.form.adtDropOff.address = ''
       this.form.adtDropOff.city = ''
       this.form.adtDropOff.state = ''
@@ -470,7 +443,6 @@ export default {
     },
 
     setDropOff (addressData, placeResultData, id) {
-      this.form.dropOff.set = true
       this.form.dropOff.address = addressData.street_number + ' ' + addressData.route
       this.form.dropOff.city = addressData.locality
       this.form.dropOff.state = addressData.administrative_area_level_1
@@ -478,7 +450,6 @@ export default {
     },
 
     keypressDropOff () {
-      this.form.dropOff.set = false
       this.form.dropOff.address = ''
       this.form.dropOff.city = ''
       this.form.dropOff.state = ''
@@ -487,6 +458,7 @@ export default {
 
     changeFormVisible () {
       this.formVisible = !this.formVisible
+      this.formStep = 1
     },
 
     addAdtPickUp () {
@@ -517,23 +489,19 @@ export default {
 
     getAvailability () {
       let vm = this
-      if (!vm.form.pickUp.set) {
+      if (vm.form.pickUp.zip === undefined || !vm.form.pickUp.zip.length) {
         vm.validationMessage = 'Please select correct pick up address'
         return
       }
-      if (vm.adtPickUp && !vm.form.adtPickUp.set) {
+      if (vm.adtPickUp && (vm.form.adtPickUp.zip === undefined || !vm.form.adtPickUp.zip.length)) {
         vm.validationMessage = 'Please select correct additional pick up address'
         return
       }
-      if (vm.adtDropOff && !vm.form.adtDropOff.set) {
+      if (vm.adtDropOff && (vm.form.adtDropOff.zip === undefined || !vm.form.adtDropOff.zip.length)) {
         vm.validationMessage = 'Please select correct additional drop off address'
         return
       }
-      if (!vm.form.dropOff.set) {
-        vm.validationMessage = 'Please select correct drop off address'
-        return
-      }
-      if (!vm.form.dropOff.set) {
+      if (vm.form.dropOff.zip === undefined || !vm.form.dropOff.zip.length) {
         vm.validationMessage = 'Please select correct drop off address'
         return
       }
@@ -553,9 +521,18 @@ export default {
         moveSize: vm.form.moveSize
       }).then(function (response) {
         if (response.data) {
-          console.log(response.data)
+          if (response.data.out_of_service === 1) {
+            vm.validationMessage = 'We don\'t serve this area.'
+          } else {
+            vm.availability = response.data
+            vm.formStep = 2
+          }
         }
       })
+    },
+
+    changeStep (step) {
+      this.formStep = step
     }
   },
 
