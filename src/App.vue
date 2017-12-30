@@ -121,35 +121,22 @@
           <div class="col-sm-12">
             <label># of Men</label>
             <div class="men-buttons row">
-              <a v-for="(price, movers) in availability.prices" :key="movers" :class="{ 'dis-but': parseInt(availability.movers.am_left) < movers || parseInt(availability.movers.pm_left) < movers }">
+              <a v-for="(price, movers) in availability.prices" :key="movers" :class="{ 'dis-but': parseInt(availability.movers.left) < movers }">
                 <div class="col-sm-12 col-md-4 text-center">
                   <div class="mbutton">
-                    <h2><i class="fa fa-user-o"></i>{{ movers }}<span>movers</span></h2>
+                    <h2><i class="fa fa-user-o"></i>{{ movers }}<span>movers</span><span></span></h2>
                     <h3><span>$</span>{{ price }}<span>/hr</span></h3>
                   </div>
                 </div>
               </a>
             </div>
           </div>
-          <div class="col-sm-12">
-            <label>Moving Van</label>
-            <select name="moving-van" class="book-form">
-              <option value="">Please select</option>
-              <option value="1">1 - Moving Van</option>
-              <option value="2">2 - Moving Van</option>
-              <option value="3">3 - Moving Van</option>     
-            </select>
-          </div>
-          <div class="col-sm-12">
-            <label>$ Total</label>
-            <input id="total" name="total" class="book-form2" value="$265" readonly>
-          </div>
-          <div class="col-sm-12 col-md-6 text-left">
-            <!-- <button @click="changeStep(1)" type="button" class="book-next">< prev step</button> -->
+          <!-- <div class="col-sm-12 col-md-6 text-left">
+            <button @click="changeStep(1)" type="button" class="book-next">< prev step</button>
           </div>
           <div class="col-sm-12 col-md-6 text-right">
             <button type="button" class="book-next">next step ></button>
-          </div>
+          </div> -->
         </div>
       
         <div v-if="formStep == 3" class="col-sm-12 col-md-6 col-md-offset-3">
