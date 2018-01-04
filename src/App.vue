@@ -36,7 +36,7 @@
       <h2 class="features-headline text-center" style="padding-bottom: 20px;">Book Kerb™</h2>
       <form action="#" class="col-sm-12 col-md-8 col-md-offset-2">
         <div v-if="formStep == 1" class="col-sm-12 col-md-6 col-md-offset-3">
-          <div class="col-sm-12"><h2>Step #1</h2></div>
+          <div class="col-sm-12" style="margin-bottom: 15px;"><h2>Step #1</h2></div>
           <div class="col-sm-12 col-md-12">
             <div class="row">
               <div class="col-sm-9 col-md-9">
@@ -117,11 +117,13 @@
         </div>
       
         <div v-if="formStep == 2" class="col-sm-12 col-md-6 col-md-offset-3">
-          <div class="col-sm-12"><h2>Step #2</h2></div>
+          <div class="col-sm-12" style="margin-bottom: 15px;"><h2>Step #2</h2></div>
           <div class="col-sm-12">
             <label># of Men</label>
             <div class="men-buttons row">
-              <a v-for="(price, movers) in availability.prices" :key="movers" :class="{ 'dis-but': parseInt(availability.movers.left) < movers }">
+              <a v-for="(price, movers) in availability.prices" :key="movers" 
+                  @click="selectPrice(movers, price)" 
+                  :class="{ 'dis-but': parseInt(availability.movers.left) < movers }">
                 <div class="col-sm-12 col-md-4 text-center">
                   <div class="mbutton">
                     <h2><i class="fa fa-user-o"></i>{{ movers }}<span>movers</span><span></span></h2>
@@ -140,32 +142,123 @@
         </div>
       
         <div v-if="formStep == 3" class="col-sm-12 col-md-6 col-md-offset-3">
-          <div class="col-sm-12"><h2>Step #3</h2></div>
-          <div class="col-sm-12 col-md-6">
-            <label>First Name</label>
-            <input name="first-name" class="book-form" type="text" placeholder="I'm Kerb">
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-sm-12"><h2>Step #3</h2></div>
           </div>
-          <div class="col-sm-12 col-md-6">
-            <label>Last Name</label>
-            <input name="last-name" class="book-form" type="text" placeholder="Pleased to meet you">
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-sm-12 col-md-6">
+              <label>First Name</label>
+              <input name="first name" v-model="form.firstName" style="margin-bottom: 5px;" class="book-form" type="text" v-validate="'required'" placeholder="First Name">
+              <span v-show="errors.has('first name')">{{ errors.first('first name') }}</span>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <label>Last Name</label>
+              <input name="last name" v-model="form.lastName" style="margin-bottom: 5px;" class="book-form" type="text" v-validate="'required'" placeholder="Last Name">
+              <span v-show="errors.has('last name')">{{ errors.first('last name') }}</span>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-6">
-            <label>Email</label>
-            <input name="user-email" class="book-form" type="email" placeholder="For a Kerb confirmation">
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-sm-12 col-md-6">
+              <label>Email</label>
+              <input name="email" v-model="form.email" style="margin-bottom: 5px;" class="book-form" type="email" v-validate="'required|email'" placeholder="Email">
+              <span v-show="errors.has('email')">{{ errors.first('email') }}</span>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <label>Phone Number</label>
+              <input name="phone" v-model="form.phone" style="margin-bottom: 5px;" class="book-form" type="text" v-validate="'required|digits:10'" placeholder="Phone">
+              <span v-show="errors.has('phone')">{{ errors.first('phone') }}</span>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-6">
-            <label>Phone Number</label>
-            <input name="user-phone" class="book-form" type="text" placeholder="For Kerb alerts">
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-sm-12">
+              <label>Notes</label>
+              <textarea v-model="form.notes" class="book-form3" type="text" placeholder="Notes"></textarea>
+            </div>
           </div>
-          <div class="col-sm-12">
-            <label>Notes</label>
-            <textarea name="notes" class="book-form3" type="text" placeholder="To better assist you"></textarea>
+
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-sm-12">
+              <h2>Payment information</h2>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-6 text-left">
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-sm-12 col-md-6">
+              <label>Credit Card Number</label>
+              <input name="credit card number" v-model="form.cardNumber" style="margin-bottom: 5px;" class="book-form" type="text" v-validate="'required|credit_card'" placeholder="Credit Card Number">
+              <span v-show="errors.has('credit card number')">{{ errors.first('credit card number') }}</span>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <label>Name On Card</label>
+              <input name="name on the card" v-model="form.cardName" style="margin-bottom: 5px;" class="book-form" type="text" v-validate="'required'" placeholder="Name On Card">
+              <span v-show="errors.has('name on the card')">{{ errors.first('name on the card') }}</span>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-sm-12 col-md-6">
+              <label>Exp. Month</label>
+              <select name="expiration month" v-model="form.cardExpMonth" style="margin-bottom: 5px;" class="book-form" v-validate="'required'">
+                <option value="">Exp. Month</option>
+                <option value="01">01 January</option>
+                <option value="02">02 February</option>
+                <option value="03">03 March</option>
+                <option value="04">04 April</option>
+                <option value="05">05 May</option>
+                <option value="06">06 June</option>
+                <option value="07">07 July</option>
+                <option value="08">08 August</option>
+                <option value="09">09 September</option>
+                <option value="10">10 October</option>
+                <option value="11">11 November</option>
+                <option value="12">12 December</option>
+              </select>
+              <span v-show="errors.has('expiration month')">{{ errors.first('expiration month') }}</span>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <label>Exp. Year</label>
+              <select name="expiration year" v-model="form.cardExpYear" style="margin-bottom: 5px;" class="book-form" v-validate="'required'">
+                <option value="">Exp. Year</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+              </select>
+              <span v-show="errors.has('expiration year')">{{ errors.first('expiration year') }}</span>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-sm-12 col-md-6">
+              <label>CVV</label>
+              <input name="cvv" v-model="form.cardCvv" style="margin-bottom: 5px;" class="book-form" type="text" v-validate="'required|numeric'" placeholder="CVV">
+              <span v-show="errors.has('cvv')">{{ errors.first('cvv') }}</span>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <label>Zip code</label>
+              <input name="billing zip code" v-model="form.cardZip" style="margin-bottom: 5px;" class="book-form" type="text" v-validate="'required|digits:5'" placeholder="Zip Code">
+              <span v-show="errors.has('billing zip code')">{{ errors.first('billing zip code') }}</span>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-sm-12 col-md-6">
+              <label>Deposit</label>
+              <input style="margin-bottom: 5px;" class="book-form" type="text" readonly :value="availability.deposit">
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 15px;">
+            <div class="col-md-12">
+              <p class="text-right" style="font-size: 20px;">Total: $100</p>
+            </div>
+          </div>
+          <!-- <div class="col-sm-12 col-md-6 text-left">
             <input type="submit" class="book-next" id="hide2" value="< prev step">
-          </div>
-          <div class="col-sm-12 col-md-6 text-right">
-            <input class="book-next" type="submit" value="Pay">
+          </div> -->
+          <div class="row">
+            <div class="col-sm-12 col-md-12 text-right">
+              <button @click="book" class="book-next" type="button">Book</button>
+            </div>
           </div>
         </div>
       </form>
@@ -248,61 +341,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="blue-section">
-      <h2 class="features-headline" style="padding-bottom: 20px;">Book Kerb™</h2>
-      <form @submit.prevent="getQuote" class="moving-form" style="z-index: 1;">
-        <div class="row">
-          <div class="col-sm-12 col-md-4 col-md-offset-4">
-            <div v-show="errors.has('zip from')" style="margin-bottom: 10px;">{{ errors.first('zip from') }}</div>
-            <div v-show="errors.has('zip to')" style="margin-bottom: 10px;">{{ errors.first('zip to') }}</div>
-          </div>
-          <div class="col-sm-12 col-md-4 col-md-offset-4">
-            <div class="col-md-6">
-              <input name="zip from" v-model="quoteForm.zipFrom" class="form-name" placeholder="Zip From" v-validate="'required|digits:5'">
-            </div>
-            <div class="col-md-6">
-              <input name="zip to" v-model="quoteForm.zipTo" class="form-name" placeholder="Zip To" v-validate="'required|digits:5'">
-            </div>
-            <div class="col-md-6">
-              <select v-model="quoteForm.moveSize" class="form-name">
-                <option value="">Move Size</option>
-                <option value="1">Studio</option>
-                <option value="2">1 Bedroom</option>
-                <option value="5">2 Bedrooms</option>
-                <option value="8">3 Bedrooms</option>
-                <option value="10">4 Bedrooms</option>
-                <option value="11">4+ Bedrooms</option>
-                <option value="3">Small Office</option>
-                <option value="6">Medium Office</option>
-                <option value="12">Large Office</option>
-                <option value="4">Small storage (5x5, 5x8, 5x10)</option>
-                <option value="7">Medium storage (10x10, 10x15)</option>
-                <option value="9">Large storage (10x20)</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <flat-pickr v-model="quoteForm.date" :config="datepicker_config" input-class="form-name" placeholder="Moving Date"></flat-pickr>
-            </div>
-            <div class="col-md-6">
-              <input v-model="quoteForm.firstName" class="form-name" placeholder="First Name">
-            </div>
-            <div class="col-md-6">
-              <input v-model="quoteForm.lastName" class="form-name" placeholder="Last Name">
-            </div>
-            <div class="col-md-6">
-              <input v-model="quoteForm.phone" class="form-name" placeholder="Phone">
-            </div>
-            <div class="col-md-6">
-              <input v-model="quoteForm.email" class="form-name" placeholder="Email">
-            </div>
-            <div class="col-md-12">
-              <input class="send-form" type="submit" value="Submit">
-            </div>
-          </div>
-        </div>
-      </form>
-    </div> -->
  
     <div class="footer">
       <div class="container">
@@ -368,10 +406,18 @@ export default {
       },
       moveSize: '',
       date: '',
+      movers: null,
+      price: null,
       firstName: '',
       lastName: '',
       phone: '',
-      email: ''
+      email: '',
+      cardNumber: '',
+      cardName: '',
+      cardExpMonth: '',
+      cardExpYear: '',
+      cardCvv: '',
+      cardZip: ''
     },
     formVisible: false,
     formStep: null,
@@ -510,6 +556,8 @@ export default {
         if (response.data) {
           if (response.data.out_of_service === 1) {
             vm.validationMessage = 'We don\'t serve this area.'
+          } else if (parseInt(response.data.trucks.left) < 1) {
+            vm.validationMessage = 'Selected date is not available.'
           } else {
             vm.availability = response.data
             vm.formStep = 2
@@ -520,6 +568,38 @@ export default {
 
     changeStep (step) {
       this.formStep = step
+    },
+
+    selectPrice (movers, price) {
+      if (parseInt(this.availability.movers.left) >= movers) {
+        this.form.movers = movers
+        this.form.price = price
+        this.formStep = 3
+      }
+    },
+
+    book () {
+      let vm = this
+      vm.$validator.validateAll({
+        'first name': vm.form.firstName,
+        'last name': vm.form.lastName,
+        'email': vm.form.email,
+        'phone': vm.form.phone,
+        'credit card number': vm.form.cardNumber,
+        'name on the card': vm.form.cardName,
+        'expiration month': vm.form.cardExpMonth,
+        'expiration year': vm.form.cardExpYear,
+        'cvv': vm.form.cardCvv,
+        'billing zip code': vm.form.cardZip
+      }).then(result => {
+        if (result) {
+          vm.axios.post('https://admin.movingreservation.com/kerb/book', vm.form).then(function (response) {
+            if (response.data) {
+              console.log('asd')
+            }
+          })
+        }
+      })
     }
   },
 
