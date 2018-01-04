@@ -1,16 +1,17 @@
 <template>
-  <div id="app">
+  <div>
     <div class="hero-background">
       <div class="container">
         <div class="header-container header">
-          <a class="navbar-brand logo" href="index.html"> <img class="logo" src="src/assets/images/kerb-logo.png"/></a>
+          <a class="navbar-brand logo" href=""> <img class="logo" src="src/assets/images/kerb-logo.png"/></a>
           <!-- <a href="#email-form">
             <button class="header-btn"> GET QUOTE!</button>
           </a> -->
-          <div class="header-right">
-            <a class="navbar-item" href="#team">Team Kerb™</a>
-            <a class="navbar-item" href="#features">Our Features</a>
-          </div>
+            <div class="header-right">
+                <a class="navbar-item" href="#team">Team Kerb™</a>
+                <a class="navbar-item" href="#features">Our Features</a>
+                <a class="navbar-item" href="tel:3107071046">(310) 707-1046</a>
+            </div>
         </div>
           
         <div class="hero row">
@@ -21,12 +22,12 @@
               Your Move is<br>
               Free!
             </h1>
-            <a>
+            <!-- <a>
               <button v-scroll-to="{
                 el: '#form',
                 offset: -112
               }" v-if="!formVisible" @click="changeFormVisible" class="hero-btn"> Book Kerb™ </button>
-            </a>
+            </a> -->
           </div>
           <div class="col-sm-6 col-sm-6 ipad">
             <img class="ipad-screen img-responsive" src="src/assets/images/screen.png"/>
@@ -359,7 +360,7 @@
         <div class="row">
           <div class="col-sm-2"></div>
           <div class="col-sm-6 webscope">
-            <span class="webscope-text"> © Kerb™ Moving - HQ 2017. All rights reserved.  HQ 18580 Ventura Blvd, Tarzana CA 91356. </span>   
+            <span class="webscope-text"> © Kerb™ 2017. All rights reserved. <br> (310) 707-1046  |  Kerb™ Moving #717 367 E Alondra Blvd Gardena, CA 90248. </span>
           </div>
           <div class="col-sm-4">
             <div class="social-links">
