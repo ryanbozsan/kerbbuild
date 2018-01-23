@@ -7,6 +7,12 @@ import VueScrollTo from 'vue-scrollto'
 
 import router from './routes'
 
+import VueAnalytics from 'vue-analytics'
+
+Vue.use(VueAnalytics, {
+  id: 'UA-112683027-1'
+})
+
 Vue.use(VueRouter)
 Vue.use(VeeValidate)
 Vue.use(VueAxios, axios)

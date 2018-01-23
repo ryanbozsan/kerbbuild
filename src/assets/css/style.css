@@ -3,6 +3,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  /*color: white;*/
 }
 
 .header-right {
@@ -136,7 +137,8 @@ body {
 }
 
 .hero-btn:hover {
-  background-color: #e0e0e0;
+  background-color: black;
+  color: #ffffff;
 }
 
 .header-headline {
@@ -238,6 +240,14 @@ body {
   max-width: 50px;
 }
 
+.seal-img {
+  max-width: 90px;
+  left: -35px;
+  z-index: 999;
+  position: relative;
+
+}
+
 .white-section {
   max-width: 1400px;
   margin: auto;
@@ -255,7 +265,7 @@ body {
 .imac-section-desc {
   text-align: center;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 40px;
   max-width: 400px;
   margin: auto;
@@ -394,7 +404,10 @@ ul {
 
 .team-member {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  border-left: 1px solid #dadada; 
+  border-right: 1px solid #dadada;
+  
 }
 
 .team-member-position {
@@ -403,11 +416,30 @@ ul {
 
 .team-member-text {
   padding-top: 25px;
+
 }
 
 .team-social-icon {
   padding: 7px;
 }
+
+.social-block {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    text-align: center; }
+ .social-block li {
+      display: inline-block;
+      margin-right: 10px; }
+ .social-block li a {
+        display: block;
+        font-size: 16px;
+        color: #8E8E8E;
+        padding: 2px 8px;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; }
+ .social-block li a:hover {
+          color: #000000; }
 
 .blue-section {
   background-color: #000;
@@ -476,7 +508,7 @@ ul {
 
 .footer {
   background-color: #252525;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -489,13 +521,13 @@ ul {
 
 .webscope {
   text-align: center;
-  margin-top: -5px;
+  /*margin-top: -5px;*/
 }
 
 .social-links {
-  float: none;
-  text-align: center;
-  padding-top: 10px;
+  /*float: none;*/
+  /*text-align: center;*/
+  /*padding-top: 10px;*/
 }
 
 .social-link {
@@ -668,3 +700,4 @@ select option {
 .additional2 {
   display: none;
 }
+
