@@ -13,7 +13,7 @@
             <!-- <a class="navbar-item" href="#">Contact Us</a> -->
             
 
-            <a class="navbar-item" v-scroll-to="{
+            <a class="navbar-item" style="cursor: pointer" v-scroll-to="{
                 el: '#form',
                 offset: -112
               }" v-if="!formVisible" @click="changeFormVisible">Book KERB</a>
