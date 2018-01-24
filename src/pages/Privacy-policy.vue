@@ -19,117 +19,106 @@
         </div>
 <div style="color:white; font-size: 14px;">
         <div class="text-center"><h2>Privacy Policy</h2></div>
-       <div style="margin-top: 50px;">This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p><br></div>
-       <span id='infoCo'></span><br>
-       <div class='grayText'><strong>What personal information do we collect from the people that visit our blog, website or app?</strong></div>
-       <br />
-       <div>When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, phone number, payment information or other details to help you with your experience.</div><br>
+       <div style="margin-top: 30px;"><strong>Scope</strong>
+        <p>This Privacy Policy applies to Kerb Inc., which includes, but are not limited to, its wholly owned subsidiaries (“we” or “us”).</p><br></div>
 
 
-       <div class='grayText'><strong>When do we collect information?</strong></div><br />
-       <div>We collect information from you when you fill out a form or enter information on our site.</div><br> <span id='infoUs'></span><br>
-       <div class='grayText'><strong>How do we use your information? </strong></div><br />
-       <div> We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:<br><br></div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested.</div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> To allow us to better service you in responding to your customer service requests.</div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> To quickly process your transactions.</div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> To send periodic emails regarding your order or other products and services.</div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> To follow up with them after correspondence (live chat, email or phone inquiries)</div><span id='infoPro'></span><br>
-       <div class='grayText'><strong>How do we protect your information?</strong></div><br />
-       <div>Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible.<br><br></div>
-       <div>We use regular Malware Scanning.<br><br></div><div>Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology. </div><br>
-       <div>We implement a variety of security measures when a user places an order  to maintain the safety of your personal information.</div><br>
-       <div>All transactions are processed through a gateway provider and are not stored or processed on our servers.</div><span id='coUs'></span><br><div class='grayText'><strong>Do we use 'cookies'?</strong></div><br />
-       <div>Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow) that enables the site's or service provider's systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.</div><div><br><strong>We use cookies to:</strong></div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Help remember and process the items in the shopping cart.</div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf.</div>
-       <div><br>You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser's Help Menu to learn the correct way to modify your cookies.<br></div>
-       <div><br><strong>If users disable cookies in their browser:</strong></div><br>
-       <div>If you turn cookies off, Some of the features that make your site experience more efficient may not function properly.Some of the features that make your site experience more efficient and may not function properly.</div><br><span id='trDi'></span><br><div class='grayText'><strong>Third-party disclosure</strong></div><br />
-       <div>We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential. We may also release information when it's release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property or safety. <br><br> However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses. </div><span id='trLi'></span><br>
-       <div class='grayText'><strong>Third-party links</strong></div><br />
-       <div>Occasionally, at our discretion, we may include or offer third-party products or services on our website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.</div><span id='gooAd'></span><br>
-       <div class='blueText'><strong>Google</strong></div><br />
-       <div>Google's advertising requirements can be summed up by Google's Advertising Principles. They are put in place to provide a positive experience for users. https://support.google.com/adwordspolicy/answer/1316548?hl=en <br><br></div>
-       <div>We use Google AdSense Advertising on our website.</div>
-       <div><br>Google, as a third-party vendor, uses cookies to serve ads on our site. Google's use of the DART cookie enables it to serve ads to our users based on previous visits to our site and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the Google Ad and Content Network privacy policy.<br></div><div><br><strong>We have implemented the following:</strong></div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Remarketing with Google AdSense</div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Demographics and Interests Reporting</div><br>
-       <div>We, along with third-party vendors such as Google use first-party cookies (such as the Google Analytics cookies) and third-party cookies (such as the DoubleClick cookie) or other third-party identifiers together to compile data regarding user interactions with ad impressions and other ad service functions as they relate to our website. </div>
-       <div><br><strong>Opting out:</strong><br>Users can set preferences for how Google advertises to you using the Google Ad Settings page. Alternatively, you can opt out by visiting the Network Advertising Initiative Opt Out page or by using the Google Analytics Opt Out Browser add on.</div><span id='calOppa'></span><br>
-       <div class='blueText'><strong>California Online Privacy Protection Act</strong></div><br /><div>CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy.  The law's reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. -  See more at: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf<br></div>
-       <div><br><strong>According to CalOPPA, we agree to the following:</strong><br></div><div>Users can visit our site anonymously.</div>
-       <div>Once this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant page after entering our website.<br></div>
-       <div>Our Privacy Policy link includes the word 'Privacy' and can easily be found on the page specified above.</div>
-       <div><br>You will be notified of any Privacy Policy changes:</div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> On our Privacy Policy Page<br></div>
-       <div>Can change your personal information:</div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> By calling us</div>
-       <div><br><strong>How does our site handle Do Not Track signals?</strong><br></div>
-       <div>We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place. </div>
-       <div><br><strong>Does our site allow third-party behavioral tracking?</strong><br></div>
-       <div>It's also important to note that we do not allow third-party behavioral tracking</div>
+       <div><strong>Information Covered</strong>
+         <p><br>This policy applies to all non-public, personal information that may be used to identify you as a visitor to the website at Kerb.com (the “Websites”) as our customer, or as a potential customer (“Personal Information”, as defined below), that is obtained by us in connection with the Websites or providing a product or service to you as part of our operations.</p></div><br>
 
-       <span id='ftcFip'></span><br>
-       <div class='blueText'><strong>Fair Information Practices</strong></div><br />
-       <div>The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information.<br><br></div>
-       <div><strong>In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur:</strong></div>
-       <div>We will notify you via email</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Within 7 business days</div>
-       <div><br>We also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government agencies to investigate and/or prosecute non-compliance by data processors.</div><span id='canSpam'></span><br>
-       <div class='blueText'><strong>CAN SPAM Act</strong></div><br />
-       <div>The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations.<br><br></div>
-       <div><strong>We collect your email address in order to:</strong></div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Process orders and to send information and updates pertaining to orders.</div>
-       <div><br><strong>To be in accordance with CANSPAM, we agree to the following:</strong></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Not use false or misleading subjects or email addresses.</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Identify the message as an advertisement in some reasonable way.</div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Include the physical address of our business or site headquarters.</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Monitor third-party email marketing services for compliance, if one is used.</div>
-       <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Honor opt-out/unsubscribe requests quickly.</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Allow users to unsubscribe by using the link at the bottom of each email.</div>
-       <div><strong><br>If at any time you would like to unsubscribe from receiving future emails, you can email us at</strong></div>
-       <div>info@kerb.com and we will promptly remove you from <strong>ALL</strong> correspondence.</div><br><span id='ourCon'></span><br><div class='blueText'><strong>Contacting Us</strong></div><br />
-       <div>If there are any questions regarding this privacy policy, you may contact us using the information below.<br><br></div>
+       <div><strong>Collection of Personal Information</strong>
+         <p><br>We rely on many sources of information to understand and meet our customers’ and potential customers’ needs and to fulfill our business objectives, including Personal Information that may be collected by Kerb, Inc. or our agents, dealers, van operators or other representatives or third-party companies authorized to act on our behalf (“Representatives”). 
+          <p>“Personal Information” may include your name, street and email address, phone number, and may also include financial information, such as credit card or other bank account data. In the case of moving and storage services, this information may also include your origin address and destination address, details about the nature of the goods being shipped, and the names and contact information for other persons involved in the shipment or authorized to provide direction on your behalf. We limit our collection of Personal Information to that which is necessary for its intended purpose.
+            <p>The sources of Personal Information may include:
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Information you provide to us or to our Representatives in person or on the telephone;
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Information provided when you visit the Websites or communicate with us by email;
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Information that you may supply to us in written or electronic surveys;
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Information about your past transactions with Kerb, Inc;
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Information from consumer reporting agencies; or
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Information from anyone that you have authorized to provide such information to us.
+            </p></div><br>
 
-       <div>Kerb™ Inc</div>
-       <div>18580 Ventura Blvd</div>Tarzana, CA 91356 
-       <div>United States</div>
-       <div>info@kerb.com</div>
-       <div>phone#: 877-707-5372</div>
-       <div>www.kerb.com</div>
 
-       <div><br>Last Edited on 2018-01-19</div>
+       <div><strong>What We Do With Your Personal Information</strong>
+         <p><br><strong>Provide Services.</strong> We may use the Personal Information that you provide in order to respond to a request for an estimate; furnish a requested product or service to you; respond to your email or other inquiry; to help improve our services; or to send to you updates or notices about our products and services that we think may be of interest to you. In order to provide you with the full range of services you request from us, it may be necessary for us to share Personal Information among the Kerb, Inc. companies or with our Representatives, or other companies that we have engaged to provide services on our behalf. We require those companies to use your Personal Information solely for the purposes for which it was provided and consistent with this Privacy Statement.
+          <p><strong>Conduct Surveys.</strong> From time to time, we may use survey forms to better understand our customers’ needs, to evaluate our services, and to create products and services that respond to their interests. Customers may decline to participate in these surveys. Kerb, Inc. will not disclose survey response information outside of the company, other than to our survey vendor(s) who assist us in collecting and analyzing such information or to our Representatives or other authorized service providers, solely for the purpose of improving our products and services.
+          <p><strong>Comply With Legal Processes.</strong> There are situations where we may disclose to third parties the Personal Information we collect as permitted or required by law. This may include disclosure to government entities, courts or other entities, such as in response to subpoenas or other legal or regulatory processes, or to protect against fraud.
+          <p><strong>Other Business Interests.</strong> We may also combine your Personal Information with other consumers' Personal Information or other publicly available information to help us satisfy our legitimate business interests, such as performing trend analysis or market studies; identify consumer preferences or interests; set prices; perform billing functions; establish credit; or comply with government regulations. We may also share anonymized data, such as statistical or demographic information in aggregate form, with third parties for research or marketing purposes. However, this anonymized data will not contain any of your individually identifiable Personal Information.
+          <p><strong>Credit Reporting Agencies.</strong> We may report information about your account(s) to credit bureaus and/or consumer reporting agencies. Late payments, missed payments, or other defaults on your account(s) may be reflected in your credit report and/or consumer report and may affect your ability to obtain credit.
+          </p></div><br>
+
+
+       <div><strong>How We Protect Your Personal Information</strong>
+         <p><br>We use reasonable measures to safeguard the security and integrity of your Personal Information through procedures and technology designed for that purpose. For example:
+         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> We maintain physical, electronic, and procedural safeguards to protect your Personal Information.
+
+         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong>We regularly assess our security standards and procedures to protect against unauthorized access to Personal Information.
+         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong>
+          We maintain Personal Information only as long as needed for legitimate business purposes, or as required by contractual or legal requirements.
+         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong>
+          We limit access to Personal Information about you to those employees and representatives who need to know that information to provide our products and services to you.
+         <p><br>You should always safeguard your own Personal Information by protecting any passwords or other identifying information used to access your account with the DG Companies and by safely disposing of any records or reports that are no longer needed.</p></div><br>
+
+       <div><strong>Other Terms and Conditions</strong>
+         <p>In addition, if you are one of our customers, your contract with us may contain distinct terms and conditions, limitations of liability and/or disclaimers of warranty applicable generally to the products or services provided by Kerb, Inc. Although we make reasonable efforts to limit access to our facilities and vehicles to authorized representatives, we are not responsible for maintaining the confidentiality of information that is printed and placed in plain view on a shipping carton.</p></div><br>
+
+       <div><strong>Cookies, Internet-Related Information, AND “DO NOT TRACK”</strong>
+         <p><br>A cookie is a small text file that may be placed in your browser by websites you visit and the content partners for those sites.  Cookies help websites remember visitors when they return to the site. For example, a cookie can help a website remember that you’ve already registered, so you don’t have to sign in again each time you visit. Essentially, cookies are used to customize websites based on the content you view and the preferences you have indicated.
+          <p><br>We may use the following cookies on the Websites:
+            <p><strong>Strictly necessary cookies.</strong> These are cookies that are required for the operation of the Websites. They include, for example, cookies that enable you to log into secure areas of the Websites, use a shopping cart or make use of e-billing services.
+              <p><strong>Analytical/performance cookies.</strong> They allow us to recognise and count the number of visitors and to see how visitors move around the Websites when they are using it. This helps us to improve the way our website works, for example, by ensuring that users are finding what they are looking for easily.
+            <p><strong>Functionality cookies.</strong> These are used to recognise you when you return to the Websites. This enables us to associate individual customers with their information profiles or  personalise our content for you, greet you by name and remember your preferences (for example, a choice of language or region).
+            <p><strong>Targeting cookies.</strong> These cookies record your visit to the Website, the pages you have visited and the links you have followed. We will use this information to make the Websites and any advertising displayed on them more relevant to your interests. We, or third parties acting on our behalf, may use cookies to present information about Kerb, Inc. services to you.  They may also be used to provide information by third parties unrelated to DG regarding goods or services that you may find helpful in connection with your move or relocation. (See also the section on Google analytics below).
+          <p><br>You have choices regarding the use of cookies. You can use the preferences in your browser to view, control and delete the cookies you have by, for example, emptying the cache in your browser.  You may visit the “Help” menu on your Internet browser for more information, or check with your browser provider. You may also “opt out” of receiving advertisements or other cookies by using services such as those provided by the Digital Advertising Alliance or Network Advertising Initiative.  You may find more information about their members and the “opt out” process by going to their websites at www.aboutads.info/choices or www.networkadvertising.org.
+          </p></div><br>
+
+       <div><strong>By visiting any of the Websites without taking steps to block or remove cookies, you are consenting to the use of cookies and other web technologies in connection with the Websites, as described in this Privacy Policy. </strong>
+       </div><br>
+
+       <div><p>In addition, the Web servers for some of the Websites use an extended log file format which captures other information about your activity on those Websites including the date and time of visit; referring address (location from which a visitor comes to our site); type of Internet browser; and Internet Protocol (IP) address. The log file does not capture your email address or other information identifying you.  We use this information to maintain and secure the Websites, monitor usage patterns, protect our intellectual property, and improve the appearance and content.</p></div><br>
+
+          <div><p>“Do Not Track” is an initiative to develop a signal for an Internet user to notify websites that he or she does not wish to be tracked by third parties. More information on the initiative is available here: http://www.w3.org/2011/tracking-protection/. Do Not Track has not yet been standardized because the initiative has not yet come to a consensus on exactly how websites should respond to these types of signals. Like many other websites, the Websites do not respond to Do Not Track signals.</p></div><br>
+
+       <div><strong>GOOGLE ANALYTICS</strong>
+         <p>The Website may use Google Analytics and Google Display Advertising which collect anonymous Website user activity data through the use of both first-party and third-party cookies. We use the Google Display Advertising features, which collect data through the third-party DoubleClick cookie, in order to:  
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong>Serve you with relevant advertising after you leave the Websites;
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong>Provide us with information about how our use of various advertising services is related to visits to the Websites; and
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong>Identify trends in how the Websites are being used, and by what demographics, and publish those trends in reports for internal use.
+
+          <p>Google Analytics collects your IP address. We use your IP address information to learn the geographical locations where the Websites are being used.  Your IP address does not identify you personally nor does it contain personal information such as your name or email address.
+          <p>We will not merge your personal information with information collected through the DoubleClick cookie without first providing you with notice of the merger and obtaining your opt-in consent.
+          <p>You may opt-out of Google Analytics for Display Advertising and customize Google Display Network ads using the Google’s Ads Settings. You can learn more here: https://support.google.com/ads/answer/2662856?hl=en&ref_topic=2971788. You may also opt-out of Google Analytics tracking with the Google Analytics opt-out browser add-on, which is available here: https://tools.google.com/dlpage/gaoptout/.
+          <p>Please note that if you opt-out of Google Analytics tracking, you will continue to receive advertisements as you browse on the Internet, but those advertisements will not be tailored to your interests.
+
+         </p></div><br>
+ 
+       <div><strong>Visiting Other Internet Sites</strong>
+           <p>Other Internet sites you visit hosted by third-party businesses, including those which may be linked to from the Websites, may have their own privacy policies or no policy at all. We are not responsible or liable for the independent privacy policies of those third-party sites. The inclusion of any link does not necessarily imply that we endorse the third party company, its Internet site, or any products or services that it may promote or sell.
+           <p>When you leave one of the Websites to visit a third party website, the information transferred to the third party may include the referring address, which discloses the fact that you came from our website. This practice allows the third party to monitor its own Internet traffic.</p></div><br>
+       
+   
+      <div><strong>CHILDREN’S ONLINE PRIVACY</strong>
+        <p>None of the Websites are directed at or intended for children under the age of 13. We do not knowingly collect Personal Information on the Websites directly from children and will destroy such information if we become aware that a child has disclosed such information to us without proper parental consent.</p></div><br>
+
+      <div><strong>Access, Questions and dispute resolution</strong>
+        <p>We will provide you with a reasonable opportunity to access your Personal Information that we have collected, correct it if it is inaccurate, or delete it as appropriate. Subject to relevant local legal requirements, (a) any such requests must be reasonable in number and scope; (b) we reserve the right to deny access to information where the burden or expense of providing access would be disproportionate to the risks to the individual's privacy or where the rights of other individuals may be violated. If you wish to make a request to access your Personal Information, or have any questions or concerns about our policies or practices, please contact us at info@kerb.com or (877) 707-5372.</p></div><br>
+
+      <div><strong>EFFECTIVE DATE AND Updates</strong>
+        <p>This Privacy Policy was last updated as of November 29th, 2017. Your continued use of any of the Websites signifies your consent to this Privacy Policy. Kerb, Inc. reserves the right to change this Privacy Policy at any time by posting the revised policy on the Websites.</p></div><br><br><br>
+
+
  </div>
 </div>
  <!-- Footer -->
     <div class="footer">
       <div class="container">
-        <!-- <div class="row">
-          <div class="text-center">
-            <a class="navbar-item" href="/">Team Kerb™</a>
-            <a class="navbar-item" href="/">Our Features</a>
-            <a class="navbar-item" href="/">Contact Us</a>
-            
-           
-            <br><br>
-            
-               <div class="col-sm-12">
-                  <a class="navbar-item" href="tel:8777075372">(877) 707-5372 </a>
-
-                    <a href="https://www.yelp.com/biz/kerb-tarzana?osq=movers" target="_blank"> <i class="fa fa-yelp icon22"></i> </a>
-                    <a href="https://www.facebook.com/Kerbmoving/" target="_blank"> <i class="fa fa-facebook icon22"></i> </a>
-                    <a href="https://www.twitter.com/kerb_inc" target="_blank"> <i class="fa fa-twitter icon22"></i> </a>
-                    <a href="https://www.instagram.com/kerbinc/" target="_blank"> <i class="fa fa-instagram icon22"></i>  </a>
-                  
-                </div>
-
-          </div>
-        </div>
-
         <div class="row">          
           <div class="col-sm-12 webscope">
             <br>
-            <span class="webscope-text"> © Kerb™ Moving - HQ 2018. All rights reserved. <br>HQ 18580 Ventura Blvd, Tarzana CA 91356. </span> 
-            <router-link class="navbar-item" to="/Privacy-policy">Privacy Policy</router-link>
-  
+            <span class="feature-subtext light"> © Kerb™ Moving - HQ 2018. All rights reserved. <br><br>HQ 18580 Ventura Blvd, Tarzana CA 91356. </span> 
+           
           </div>          
-        </div> -->
+        </div>
 
       </div>
     </div>    
