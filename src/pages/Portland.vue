@@ -7,23 +7,25 @@
           <!-- <a href="#email-form">
             <button class="header-btn"> GET QUOTE!</button>
           </a> -->
-          
-
           <div class="header-right">
-            <a class="navbar-item" href="#team">Team Kerb™</a>
             <a class="navbar-item" href="#features">Our Features</a>
-            <a class="navbar-item" href="#contact">Contact Us</a>
+            <a class="navbar-item" href="#team">Team Kerb™</a>
+            <!-- <a class="navbar-item" href="#">Contact Us</a> -->
+            
 
-            <a class="navbar-item" href="tel:8777075372">(877) 707-5372</a>
+            <a class="navbar-item" style="cursor: pointer" v-scroll-to="{
+                el: '#form',
+                offset: -112
+              }" v-if="!formVisible" @click="changeFormVisible">Book KERB Portland</a>
+              
+
+            <a class="navbar-item" href="tel:5035068776">(503)-506-8776</a>
           </div>
-
-
-           
         </div>
           
         <div class="hero row">
           <div class="hero-right col-sm-6 col-sm-6">
-            <h1 class="header-headline bold">
+            <h1 class="header-headline">
               On Time<br>
               Service or<br>
               Your Move is<br>
@@ -35,6 +37,8 @@
                 offset: -112
               }" v-if="!formVisible" @click="changeFormVisible" class="hero-btn"> Book Kerb™ </button>
             </a>
+            <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/>
+
           </div>
           <div class="col-sm-6 col-sm-6 ipad">
             <img class="ipad-screen img-responsive" src="src/assets/images/screen.png"/>
@@ -43,12 +47,15 @@
       </div>
     </div>
 
+
+<!-- Booking form -->
     <div id="form">
       <div v-if="formVisible" class="formbg row">
-        <h2 class="features-headline text-center" style="padding-bottom: 20px;">Book Kerb™</h2>
+        <h2 class="features-headline text-center" style="padding-bottom: 10px;">Book Kerb™ In 3 Easy Steps</h2>
+        <p class="features-headline text-center" style="padding-bottom: 20px;"> (Please fill out all the fields)</p>
         <form action="#" class="col-sm-12 col-md-8 col-md-offset-2">
           <div v-if="formStep == 1" class="col-sm-12 col-md-6 col-md-offset-3">
-            <div class="col-sm-12" style="margin-bottom: 15px;"><h2>Step #1</h2></div>
+            <div class="col-sm-12" style="margin-bottom: 15px;"><h2>Step #1 </h2></div>
             <div class="col-sm-12 col-md-12">
               <div class="row">
                 <div class="col-sm-9 col-md-9">
@@ -57,7 +64,7 @@
                     v-on:placechanged="setPickUp" v-on:keypress="keypressPickUp"></vue-google-autocomplete>
                 </div>
                 <div class="col-sm-3 col-md-3">
-                  <label style="height: 20px"><a @click="addAdtPickUp" v-if="!adtPickUp" style="cursor: pointer">more?</a></label>
+                  <label style="height: 20px"><a @click="addAdtPickUp" v-if="!adtPickUp" style="cursor: pointer">Extra Pick Up?</a></label>
                   <input v-model="form.pickUp.apt" class="book-form" placeholder="Apt/Suit">
                 </div>
               </div>
@@ -68,7 +75,7 @@
                     v-on:placechanged="setAdtPickUp" v-on:keypress="keypressAdtPickUp"></vue-google-autocomplete>
                 </div>
                 <div class="col-sm-3 col-md-3">
-                  <label style="height: 20px"><a @click="removeAdtPickUp" style="cursor: pointer">remove?</a></label>
+                  <label style="height: 20px"><a @click="removeAdtPickUp" style="cursor: pointer">Remove?</a></label>
                   <input v-model="form.adtPickUp.apt" class="book-form" placeholder="Apt/Suit">
                 </div>
               </div>
@@ -81,7 +88,7 @@
                     v-on:placechanged="setAdtDropOff" v-on:keypress="keypressAdtDropOff"></vue-google-autocomplete>
                 </div>
                 <div class="col-sm-3 col-md-3">
-                  <label style="height: 20px"><a @click="removeAdtDropOff" style="cursor: pointer">remove?</a></label>
+                  <label style="height: 20px"><a @click="removeAdtDropOff" style="cursor: pointer">Remove?</a></label>
                   <input v-model="form.adtDropOff.apt" class="book-form" placeholder="Apt/Suit">
                 </div>
               </div>
@@ -92,7 +99,7 @@
                     v-on:placechanged="setDropOff" v-on:keypress="keypressDropOff"></vue-google-autocomplete>
                 </div>
                 <div class="col-sm-3 col-md-3">
-                  <label style="height: 20px"><a @click="addAdtDropOff" v-if="!adtDropOff" style="cursor: pointer">more?</a></label>
+                  <label style="height: 20px"><a @click="addAdtDropOff" v-if="!adtDropOff" style="cursor: pointer">Extra Drop Off?</a></label>
                   <input v-model="form.dropOff.apt" class="book-form" placeholder="Apt/Suit">
                 </div>
               </div>
@@ -283,56 +290,99 @@
         </form>
       </div>
     </div>
+<!-- End Booking form -->
+
+
+<!-- Kerb™ FEATURES -->
 
     <div id="features" class="features-section">
       <div class="features-container row">
         <h2 class="features-headline">Kerb™ FEATURES</h2>
-        <div class="col-sm-4 feature">
+        
+        <div class="col-sm-3 feature">
           <div class="feature-icon ">
             <img class="feature-img" src="src/assets/images/icon-1.png">
           </div>
           <h5 class="feature-head-text "> TRUST CAM </h5>
-          <p class="feature-subtext light "> Our trucks are equipped with live streaming cameras to always ensure quality and safety.</p>
+          <p class="feature-subtext light "> All Our Trucks Are Equipped With 4 Live Streaming Cameras To Always Ensure Quality And Safety</p>
         </div>
 
-        <div class="col-sm-4 feature">
+        <div class="col-sm-3 feature">
           <div class="feature-icon  ">
-            <img class="feature-img" src="src/assets/images/icon-2.png">
+            <img class="feature-img" src="src/assets/images/icon-box.png">
           </div>
           <h5 class="feature-head-text  "> PACKING SUPPLIES </h5>
-          <p class="feature-subtext light  "> Always included in our rate and delivered ahead of time for free!</p>
+          <p class="feature-subtext light  "> Packing Supplies Always Included In Our Rate And Delivered Ahead Of Time For Free!</p>
         </div>
 
-        <div class="col-sm-4 feature">
+        <div class="col-sm-3 feature">
           <div class="feature-icon  ">
             <img class="feature-img" src="src/assets/images/icon-3.png">
           </div>
           <h5 class="feature-head-text  "> INSURANCE </h5>
-          <p class="feature-subtext light  "> A tricky topic in the moving industry, but not with Kerb™ we include Moving Insurance!</p>
+          <p class="feature-subtext light  "> A Tricky Topic In The Moving Industry, But Not With Kerb™ We Include Moving Insurance!</p>
         </div>
+
+        <div class="col-sm-3 feature">
+          <div class="feature-icon  ">
+            <img class="feature-img" src="src/assets/images/icon-movers.png">
+          </div>
+          <h5 class="feature-head-text  "> VETTED MOVERS </h5>
+          <p class="feature-subtext light  "> All of Our Employees Undergo A Thorough Background Check and Drug Screening Process.</p>
+        </div>
+
+            <!--  <a>
+              <button v-scroll-to="{
+                el: '#form',
+                offset: -112
+              }" v-if="!formVisible" @click="changeFormVisible" class="hero-btn"> Book Kerb™ </button>
+            </a>
+            <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/>
+ -->
       </div> 
     </div>  
 
     <div class="logos-section">
-      <h3 style="padding:30px 0;margin:0;">Kerb™ Moving - HQ = Trust 
+      <h3 style="padding:30px 0;margin:0;">Kerb™ = Trust 
         <span style="padding-left:200px;">Book Kerb™ = Welcome Home</span>
       </h3>
     </div>
     
+  <!-- MOVING INSURANCE -->
+
     <div class="white-section row">
       <div class="imac col-sm-6">
         <img class="imac-screen img-responsive" src="src/assets/images/imac.png">
+        <div class="text-center">
+          <h3 style="margin-top:-40px;">Hire Kerb™ = Rest Assured. </h3>
+          <a><button v-scroll-to="{
+              el: '#form',
+              offset: -112
+            }" v-if="!formVisible" @click="changeFormVisible" class="hero-blk-btn"> Book Kerb™ </button></a>
+          <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/>
+        </div>
       </div>
       <div class="col-sm-6">
         <div class="white-section-text">
-          <h2 class="imac-section-header">MOVING INSURANCE?</h2>
+          <h2 class="imac-section-header">MOVING INSURANCE?<br><br>Kerb™ got it</h2>
+
           <div class="imac-section-desc">
-            <span>Kerb™ got it.</span>
+              
+              <p>When hiring Kerb™ rest assured you are in good hands. 
+              <p>We use fresh and modern techniques in all aspects of your move to circumvent and mitigate damage or loss.
+              <p>Sounds good? Well now the important stuff. 
+              <p>Plain and simple: if something goes wrong, we at Kerb™ will make it right. 
+              <p>We call that "Kerb™ assurance" which in our mind is most valuable attribute you could want when hiring a company. </p>
+
+
           </div>
         </div>
       </div>
     </div>
-    
+
+  
+  <!-- TEAM Kerb™ -->
+
     <div id="team" class="team">
       <h2 class="team-section-header text-center">TEAM Kerb™</h2>
       <div class="team-container row">
@@ -341,6 +391,15 @@
           <div class="team-member-text">
             <h4 class="team-member-position light">CTO</h4>
             <h5 class="bold">Vitalii Bogdanov</h5>
+            <ul class="social-block">
+                <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
           </div>
         </div>
 
@@ -349,6 +408,15 @@
           <div class="team-member-text">
             <h4 class="team-member-position light">CEO</h4>
             <h5 class="bold">Wes Deaurora</h5>
+            <ul class="social-block">
+                <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
           </div>
         </div>
 
@@ -357,29 +425,65 @@
           <div class="team-member-text">
             <h4 class="team-member-position light">COO</h4>
             <h5 class="bold">Dmitri Rabinovich</h5>
+            <ul class="social-block">
+                <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
           </div>
-        </div>
+        </div>            
       </div>
     </div>
  
+
+
+ <!-- Footer -->
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-6 webscope">
-            <span class="webscope-text"> © Kerb™ Moving - HQ 2018. All rights reserved. <br>(877) 707-5372 | HQ 18580 Ventura Blvd, Tarzana CA 91356. </span>   
-          </div>
-          <div class="col-sm-4">
-            <div class="social-links">
-              <a href="https://www.yelp.com/biz/kerb-tarzana?osq=movers" target="_blank"> <i class="fa fa-yelp icon22"></i> </a>
-              <a href="https://www.facebook.com/Kerbmoving/" target="_blank"> <i class="fa fa-facebook icon22"></i> </a>
-              <a href="https://www.twitter.com/kerb_inc" target="_blank"> <i class="fa fa-twitter icon22"></i> </a>
-              <a href="https://www.instagram.com/kerbinc/" target="_blank"> <i class="fa fa-instagram icon22"></i>  </a>
-            </div>
+          <div class="text-center">
+            <!-- <a class="navbar-item" href="#team">Team Kerb™</a> -->
+            <!-- <a class="navbar-item" href="#features">Our Features</a> -->
+            <a class="navbar-item" href="https://www.indeedjobs.com/kerb-moving/_hl/en_US" target="_blank">Careers</a>
+            
+            
+            <router-link class="navbar-item" to="/Privacy-policy" target="_blank">Privacy Policy</router-link>
+  
+            <br><br>
+            
+               <div class="col-sm-12">
+                  <a class="navbar-item" href="tel:5035068776">(503)-506-8776</a>
+                  <span class="feature-subtext light"> 5317 NE 105th Ave, Portland, OR 97220 </span> 
+                  <br><br>
+                    <a href="https://www.yelp.com/biz/kerb-tarzana?osq=movers" target="_blank"> <i class="fa fa-yelp icon22"></i> </a>
+                    <a href="https://www.facebook.com/Kerbmoving/" target="_blank"> <i class="fa fa-facebook icon22"></i> </a>
+                    <a href="https://www.twitter.com/kerb_inc" target="_blank"> <i class="fa fa-twitter icon22"></i> </a>
+                    <a href="https://www.instagram.com/kerbinc/" target="_blank"> <i class="fa fa-instagram icon22"></i>  </a>
+                    <a href="https://www.linkedin.com/company/18461025/" target="_blank"> <i class="fa fa-linkedin-square icon22"></i>  </a>
+                  
+                </div>
+
           </div>
         </div>
+
+        <div class="row">          
+          <div class="col-sm-12 webscope">
+            <br>
+            <span class="feature-subtext light">- License# 0191684- </span><br>
+            <span class="feature-subtext light">© 2018 Kerb™ Moving. All rights reserved.</span> 
+            <!-- <a href="/privacy-policy.html" target="_blank"> Privacy Policy</a> -->
+            <!-- <router-link class="navbar-item" to="/Privacy-policy" target="_blank">Privacy Policy</router-link> -->
+  
+          </div>          
+        </div>
+
       </div>
-    </div>
+    </div>    <!-- FOOTER -->
+
   </div>
 </template>
 

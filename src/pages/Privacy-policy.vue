@@ -115,8 +115,11 @@
         <div class="row">          
           <div class="col-sm-12 webscope">
             <br>
-            <span class="feature-subtext light"> © Kerb™ Moving - HQ 2018. All rights reserved. <br><br>HQ 18580 Ventura Blvd, Tarzana CA 91356. </span> 
-           
+            <span class="feature-subtext light">- License# 0191684- </span><br>
+            <span class="feature-subtext light">© 2018 Kerb™ Moving. All rights reserved.</span> 
+             <!-- <a href="/privacy-policy.html" target="_blank"> Privacy Policy</a> -->
+            <!-- <router-link class="navbar-item" to="/Privacy-policy" target="_blank">Privacy Policy</router-link> -->
+  
           </div>          
         </div>
 

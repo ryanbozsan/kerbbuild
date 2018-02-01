@@ -3,10 +3,12 @@ import Pittsburgh from './pages/Pittsburgh.vue'
 import SouthBay from './pages/SouthBay.vue'
 import InlandEmpire from './pages/InlandEmpire.vue'
 import Privacypolicy from './pages/Privacy-policy.vue'
+import Portland from './pages/Portland.vue'
 
 import VueRouter from 'vue-router'
 
 let router = new VueRouter({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -17,6 +19,11 @@ let router = new VueRouter({
       path: '/pittsburgh',
       name: 'pittsburgh',
       component: Pittsburgh
+    },
+    {
+      path: '/portland',
+      name: 'portland',
+      component: Portland
     },
     {
       path: '/southbay',
