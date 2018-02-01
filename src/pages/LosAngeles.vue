@@ -320,7 +320,7 @@
             <img class="feature-img" src="src/assets/images/icon-3.png">
           </div>
           <h5 class="feature-head-text  "> INSURANCE </h5>
-          <p class="feature-subtext light  "> A tricky topic in the moving industry, but not with Kerb™ we include Moving Insurance!</p>
+          <p class="feature-subtext light  "> A Tricky Topic In The Moving Industry, But Not With Kerb™ We Include Moving Insurance!</p>
         </div>
 
         <div class="col-sm-3 feature">
@@ -328,17 +328,17 @@
             <img class="feature-img" src="src/assets/images/icon-movers.png">
           </div>
           <h5 class="feature-head-text  "> VETTED MOVERS </h5>
-          <p class="feature-subtext light  "> All Our Movers Undergo Background Check and Drug Testing. They Have The Proper Tools And Training To Perform At Their Best.</p>
+          <p class="feature-subtext light  "> All of Our Employees Undergo A Thorough Background Check and Drug Screening Process.</p>
         </div>
 
-             <a>
+            <!--  <a>
               <button v-scroll-to="{
                 el: '#form',
                 offset: -112
               }" v-if="!formVisible" @click="changeFormVisible" class="hero-btn"> Book Kerb™ </button>
             </a>
             <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/>
-
+ -->
       </div> 
     </div>  
 
@@ -353,8 +353,14 @@
     <div class="white-section row">
       <div class="imac col-sm-6">
         <img class="imac-screen img-responsive" src="src/assets/images/imac.png">
-                  <h3 class="text-center" style="margin-top:-40px;">Hire Kerb™ = Rest Assured. </h3>
-
+        <div class="text-center">
+          <h3 style="margin-top:-40px;">Hire Kerb™ = Rest Assured. </h3>
+          <a><button v-scroll-to="{
+              el: '#form',
+              offset: -112
+            }" v-if="!formVisible" @click="changeFormVisible" class="hero-blk-btn"> Book Kerb™ </button></a>
+          <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/>
+        </div>
       </div>
       <div class="col-sm-6">
         <div class="white-section-text">
@@ -440,23 +446,24 @@
       <div class="container">
         <div class="row">
           <div class="text-center">
-            <a class="navbar-item" href="#team">Team Kerb™</a>
-            <a class="navbar-item" href="#features">Our Features</a>
-            <!-- <a class="navbar-item" href="#contact">Contact Us</a> -->
+            <!-- <a class="navbar-item" href="#team">Team Kerb™</a> -->
+            <!-- <a class="navbar-item" href="#features">Our Features</a> -->
+            <a class="navbar-item" href="https://www.indeedjobs.com/kerb-moving/_hl/en_US" target="_blank">Careers</a>
             
-            <a class="navbar-item" v-scroll-to="{
-                el: '#form',
-                offset: -112
-              }" v-if="!formVisible" @click="changeFormVisible">Book KERB</a>
+            
+            <router-link class="navbar-item" to="/Privacy-policy" target="_blank">Privacy Policy</router-link>
+  
             <br><br>
             
                <div class="col-sm-12">
-                  <a class="navbar-item" href="tel:8777075372">(877) 707-5372 </a>
-
+                  <a class="navbar-item" href="tel:8777075372">(877) 707-5372 </a><br>
+                  <span class="feature-subtext light"> HQ 18580 Ventura Blvd, Tarzana CA 91356 </span> 
+                  <br><br>
                     <a href="https://www.yelp.com/biz/kerb-tarzana?osq=movers" target="_blank"> <i class="fa fa-yelp icon22"></i> </a>
                     <a href="https://www.facebook.com/Kerbmoving/" target="_blank"> <i class="fa fa-facebook icon22"></i> </a>
                     <a href="https://www.twitter.com/kerb_inc" target="_blank"> <i class="fa fa-twitter icon22"></i> </a>
                     <a href="https://www.instagram.com/kerbinc/" target="_blank"> <i class="fa fa-instagram icon22"></i>  </a>
+                    <a href="https://www.linkedin.com/company/18461025/" target="_blank"> <i class="fa fa-linkedin-square icon22"></i>  </a>
                   
                 </div>
 
@@ -466,9 +473,9 @@
         <div class="row">          
           <div class="col-sm-12 webscope">
             <br>
-            <span class="feature-subtext light"> © Kerb™ Moving - HQ 2018. All rights reserved. <br><br>HQ 18580 Ventura Blvd, Tarzana CA 91356. </span> 
+            <span class="feature-subtext light">© Kerb™ Moving-License# 0191684-2018. All rights reserved<br> </span> 
             <!-- <a href="/privacy-policy.html" target="_blank"> Privacy Policy</a> -->
-            <router-link class="navbar-item" to="/Privacy-policy" target="_blank">Privacy Policy</router-link>
+            <!-- <router-link class="navbar-item" to="/Privacy-policy" target="_blank">Privacy Policy</router-link> -->
   
           </div>          
         </div>
