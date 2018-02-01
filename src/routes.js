@@ -8,7 +8,7 @@ import Portland from './pages/Portland.vue'
 import VueRouter from 'vue-router'
 
 let router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   routes: [
     {
       path: '/',

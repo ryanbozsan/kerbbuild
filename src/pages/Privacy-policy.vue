@@ -3,7 +3,7 @@
     <div class="hero-background">
       <div class="container">
         <div class="header-container header">
-          <a class="navbar-brand logo" href=""> <img class="logo" src="src/assets/images/kerb-logo.png"/></a>
+          <span class="navbar-brand logo"> <img class="logo" src="src/assets/images/kerb-logo.png"/></span>
         <!--  <div class="header-right">
             <a class="navbar-item" href="">Our Features</a>
             <a class="navbar-item" href="">Team Kerb™</a>
