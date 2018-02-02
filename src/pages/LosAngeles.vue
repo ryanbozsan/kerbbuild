@@ -3,7 +3,7 @@
     <div class="hero-background">
       <div class="container">
         <div class="header-container header">
-          <a class="navbar-brand logo" href=""> <img class="logo" src="src/assets/images/kerb-logo.png"/></a>
+          <a class="navbar-brand logo" href="#"> <img class="logo" src="src/assets/images/kerb-logo.png"/></a>
           <!-- <a href="#email-form">
             <button class="header-btn"> GET QUOTE!</button>
           </a> -->
@@ -131,7 +131,7 @@
               <!-- <img src="src/assets/images/up-arrow.png" alt="Kerb™"> Selected date is not available. -->
             </div>
             <div class="col-sm-12 col-md-4 text-right">
-              <button @click="getAvailability" type="button" class="book-next">next step ></button>
+              <button @click="getAvailability" type="button" class="book-next">Next step ></button>
             </div>
           </div>
         

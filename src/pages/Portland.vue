@@ -3,7 +3,7 @@
     <div class="hero-background">
       <div class="container">
         <div class="header-container header">
-          <a class="navbar-brand logo" href=""> <img class="logo" src="src/assets/images/kerb-logo.png"/></a>
+          <a class="navbar-brand logo" href="#"> <img class="logo" src="src/assets/images/kerb-logo.png"/></a>
           <!-- <a href="#email-form">
             <button class="header-btn"> GET QUOTE!</button>
           </a> -->
