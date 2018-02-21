@@ -440,7 +440,6 @@
     </div>
  
 
-
  <!-- Footer -->
     <div class="footer">
       <div class="container">
@@ -451,7 +450,7 @@
             <a class="navbar-item" href="https://www.indeedjobs.com/kerb-moving/_hl/en_US" target="_blank">Careers</a>
             
             
-            <router-link class="navbar-item" to="/Privacy-policy" target="_blank">Privacy Policy</router-link>
+            <router-link class="navbar-item1" to="/Privacy-policy" target="_blank">Privacy Policy</router-link>
   
             <br><br>
             
@@ -462,7 +461,7 @@
                     <a href="https://www.yelp.com/biz/kerb-tarzana?osq=movers" target="_blank"> <i class="fa fa-yelp icon22"></i> </a>
                     <a href="https://www.facebook.com/Kerbmoving/" target="_blank"> <i class="fa fa-facebook icon22"></i> </a>
                     <a href="https://www.twitter.com/kerb_inc" target="_blank"> <i class="fa fa-twitter icon22"></i> </a>
-                    <a href="https://www.instagram.com/kerbinc/" target="_blank"> <i class="fa fa-instagram icon22"></i>  </a>
+                    <a href="https://www.instagram.com/kerbmoving/" target="_blank"> <i class="fa fa-instagram icon22"></i>  </a>
                     <a href="https://www.linkedin.com/company/18461025/" target="_blank"> <i class="fa fa-linkedin-square icon22"></i>  </a>
                   
                 </div>
