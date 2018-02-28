@@ -527,6 +527,7 @@ export default {
         state: '',
         zip: ''
       },
+      companyId: 859,
       moveSize: '',
       date: '',
       movers: null,
@@ -672,6 +673,7 @@ export default {
       }
       vm.validationMessage = ''
       vm.axios.post('https://admin.movingreservation.com/kerb/get-availability', {
+        companyId: vm.form.companyId,
         zipFrom: vm.form.pickUp.zip,
         zipTo: vm.form.dropOff.zip,
         date: vm.form.date,

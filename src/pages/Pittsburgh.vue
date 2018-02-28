@@ -10,6 +10,12 @@
             <div class="header-right">
                 <a class="navbar-item" href="#team">Team Kerb™</a>
                 <a class="navbar-item" href="#features">Our Features</a>
+
+                <a class="navbar-item" style="cursor: pointer" v-scroll-to="{
+                    el: '#form',
+                    offset: -112
+                  }" v-if="!formVisible" @click="changeFormVisible">Book KERB</a>
+
                 <a class="navbar-item" href="tel:4129045063">(412) 904-5063</a>
             </div>
         </div>
@@ -417,6 +423,7 @@ export default {
         state: '',
         zip: ''
       },
+      companyId: 870,
       moveSize: '',
       date: '',
       movers: null,
@@ -562,6 +569,7 @@ export default {
       }
       vm.validationMessage = ''
       vm.axios.post('https://admin.movingreservation.com/kerb/get-availability', {
+        companyId: vm.form.companyId,
         zipFrom: vm.form.pickUp.zip,
         zipTo: vm.form.dropOff.zip,
         date: vm.form.date,
