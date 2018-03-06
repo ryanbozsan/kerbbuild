@@ -63,7 +63,10 @@
                   <select v-model="form.companyId" class="book-form" v-validate="'required'">
                     <option value="">Select Location</option>
                     <option value="859">Los Angeles</option>
+                    <option value="884">Corona</option>
+                    <option value="861">San Francisco</option>
                     <option value="870">Pittsburgh</option>
+                    <option value="883">Portland</option>
                   </select>
                 </div>
               </div>
