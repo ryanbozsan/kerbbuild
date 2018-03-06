@@ -58,6 +58,16 @@
             <div class="col-sm-12" style="margin-bottom: 15px;"><h2>Step #1 </h2></div>
             <div class="col-sm-12 col-md-12">
               <div class="row">
+                <div class="col-md-12">
+                  <label>Select location</label>
+                  <select v-model="form.companyId" class="book-form" v-validate="'required'">
+                    <option value="">Select Location</option>
+                    <option value="859">Los Angeles</option>
+                    <option value="870">Pittsburgh</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
                 <div class="col-sm-9 col-md-9">
                   <label>Starting Address</label>
                   <vue-google-autocomplete id="pickUp" name="pick up" classname="book-form" placeholder="Enter your Pickup Address" 
@@ -527,7 +537,7 @@ export default {
         state: '',
         zip: ''
       },
-      companyId: 859,
+      companyId: '',
       moveSize: '',
       date: '',
       movers: null,
@@ -647,6 +657,10 @@ export default {
 
     getAvailability () {
       let vm = this
+      if (!vm.form.companyId.length) {
+        vm.validationMessage = 'Please choose a location'
+        return
+      }
       if (vm.form.pickUp.zip === undefined || !vm.form.pickUp.zip.length) {
         vm.validationMessage = 'Please select correct pick up address'
         return
