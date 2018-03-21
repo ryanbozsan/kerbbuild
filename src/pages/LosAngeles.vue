@@ -3,15 +3,21 @@
     <div class="hero-background">
       <div class="container">
         <div class="header-container header">
-          <a class="navbar-brand logo" href="#"> <img class="logo" src="src/assets/images/kerb-logo.png"/></a>
-          <!-- <a href="#email-form">
-            <button class="header-btn"> GET QUOTE!</button>
-          </a> -->
+          <a class="navbar-brand logo" href="#"> 
+            <b-btn v-b-tooltip.hover title="How do we know that we are America’s Most Trusted Movers? 
+            While this is a self-proclaimed statement, we had research conducted and believe it to be an accurate statement and representation of our company. 
+            The independent research considered crew background checks, in-truck CCTV cameras, and our commitment to resolving claims and complaints in a swift manner. 
+            Thus, you can rest assured that we are in fact America’s Most Trusted Movers">
+              <img class="logo" src="src/assets/images/kerb-logo.png"/>
+            </b-btn>
+          </a>
+          
           <div class="header-right">
             <a class="navbar-item" href="#features">Our Features</a>
             <a class="navbar-item" href="#team">Team Kerb™</a>
             <!-- <a class="navbar-item" href="#">Contact Us</a> -->
-            
+            <a class="navbar-item" href="#insurance">Insurance</a>
+            <a class="navbar-item" href="#storage">Storage</a>
 
             <a class="navbar-item" style="cursor: pointer" v-scroll-to="{
                 el: '#form',
@@ -26,10 +32,14 @@
         <div class="hero row">
           <div class="hero-right col-sm-6 col-sm-6">
             <h1 class="header-headline">
-              On Time<br>
-              Service or<br>
-              Your Move is<br>
-              Free!
+             
+              <b-btn v-b-tooltip.hover style="cursor: pointer" title="Free move Up to $1,000 if we are more than 15 minutes late outside of the provided arrival window (the specified arrival window can be found on your confirmation document)    Example: if the time of arrival window is 9-10am then an arrival of 10:20 am would qualify for a free move of up to $1,000">
+                On Time<br>
+                Service or<br>
+                Your Move is<br>
+                Free!
+              </b-btn>
+
             </h1>
             <a>
               <button v-scroll-to="{
@@ -37,7 +47,7 @@
                 offset: -112
               }" v-if="!formVisible" @click="changeFormVisible" class="hero-btn"> Book Kerb™ </button>
             </a>
-            <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/>
+            <!-- <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/> -->
 
           </div>
           <div class="col-sm-6 col-sm-6 ipad">
@@ -355,47 +365,101 @@
       </div> 
     </div>  
 
+
+
+<!-- MOVING INSURANCE -->
+
+ <div id="insurance" class="insurance">
     <div class="logos-section">
       <h3 style="padding:30px 0;margin:0;">Kerb™ = Trust 
-        <span style="padding-left:200px;">Book Kerb™ = Welcome Home</span>
+        <!-- <span style="padding-left:200px;">Book Kerb™ = Welcome Home</span> -->
       </h3>
     </div>
     
-  <!-- MOVING INSURANCE -->
 
     <div class="white-section row">
       <div class="imac col-sm-6">
-        <img class="imac-screen img-responsive" src="src/assets/images/imac.png">
+        <img class="imac-screen img-responsive" src="src/assets/images/kerb-insurance-1.jpg">
         <div class="text-center">
           <h3 style="margin-top:-40px;">Hire Kerb™ = Rest Assured. </h3>
           <a><button v-scroll-to="{
               el: '#form',
               offset: -112
             }" v-if="!formVisible" @click="changeFormVisible" class="hero-blk-btn"> Book Kerb™ </button></a>
-          <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/>
+          <!-- <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/> -->
         </div>
       </div>
       <div class="col-sm-6">
         <div class="white-section-text">
-          <h2 class="imac-section-header">MOVING INSURANCE?<br><br>Kerb™ got it</h2>
+          <h2 class="imac-section-header">MOVING INSURANCE?<br><br>We call it "Kerb Cover"</h2>
 
           <div class="imac-section-desc">
               
-              <p>When hiring Kerb™ rest assured you are in good hands. 
-              <p>We use fresh and modern techniques in all aspects of your move to circumvent and mitigate damage or loss.
-              <p>Sounds good? Well now the important stuff. 
-              <p>Plain and simple: if something goes wrong, we at Kerb™ will make it right. 
-              <p>We call that "Kerb™ assurance" which in our mind is most valuable attribute you could want when hiring a company. </p>
+              <p>By law, licensed moving companies have limited accountability for contents damaged; with the Maximum liability being at a whopping 0.60 cents per pound of damaged weight.  
+              <p>However, with "Kerb Cover"  we will restore items to their original condition, in the rare event of any content or structural damage claim. Furthermore, if an item is damaged beyond repair, we will replace it like-for-like or offer a financial settlement.
+              <br><p><b>"Kerb Cover" Exceptions:</b>
+              <p>Please note that items of extreme value, such as cash, jewelry, personal documents, antiques or items of sentimental value are not covered. Arrangements to transport these items separately are required to be put in place by the customer. 
+
+              <p>If you would like coverage for these types of items we recommend purchasing a 3rd party insurance policy : Example <a target="_blank" href="http://www.emoveinsurance.com">www.emoveinsurance.com</a> </p>
 
 
           </div>
         </div>
       </div>
     </div>
+  </div>
+  
+<!-- Kerb™ STORAGE -->
+<div id="storage" class="storage">
+    <div class="logos-section">
+      <h3 style="padding:30px 0;margin:0;">Kerb™ STORAGE 
+        <!-- <span style="padding-left:200px;">Book Kerb™ = Welcome Home</span> -->
+      </h3>
+    </div>
 
+    <div class="white-section row">
+      
+      <div class="col-sm-6">
+        <div class="white-section-text">
+          <h2 class="imac-section-header">STORAGE OPTIONS:</h2>
+
+          <div class="imac-section-desc">
+              
+              <p>At Kerb™ we offer highly-competitive storage options to our valued customers.
+                If you choose to transfer from a competitor’s storage facility to our facility, 
+                we will move your consignment from their location to ours for no added charge (Within 50 miles).
+
+              <p>Kerb™ storage rates are calculated by volume.
+                We will pack your items, load our truck, measure the volume and charge only $0.25 per cubic foot per month. This means, no more paying for excess space you don't use. 
+
+
+              <br><p><b>For example:</b> 10X10 worth of space with us would run $200 monthly. Whereas, an average 10X10 Self storage unit goes for $220-$300 Monthly. 
+              <p>Also, we offer free deals depending on the duration that you store with us. Example is you store with us for 12 months or more your first 3 months will be free. 
+
+              <p>An added bonus, you can retrieve individual items at any time, free of charge, by visiting our facility. Alternatively, for those who do not have the time to visit our facility, we can re-deliver single items starting at just $20 per item. </p>
+              <div class="text-center"><p><b>With all these perks, why wouldn’t you store with us?</b></p></div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <img class="imac-screen img-responsive" src="src/assets/images/storage-bw.jpg">
+        <div class="text-center">
+          <h3 style="margin-top:-40px;">Hire Kerb™ = Rest Assured. </h3>
+          <a><button v-scroll-to="{
+              el: '#form',
+              offset: -112
+            }" v-if="!formVisible" @click="changeFormVisible" class="hero-blk-btn"> Book Kerb™ </button></a>
+          <!-- <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/> -->
+        </div>
+      </div>
+    </div>
+</div>
   
   <!-- TEAM Kerb™ -->
 
+  
     <div id="team" class="team">
       <h2 class="team-section-header text-center">TEAM Kerb™</h2>
       <div class="team-container row">
@@ -452,6 +516,9 @@
       </div>
     </div>
  
+ <div class="container">
+        <img class="imac-screen img-responsive" src="src/assets/images/kerb-trucks-Mar20-wbgr.jpg">
+  </div>
 
  <!-- Footer -->
     <div class="footer">

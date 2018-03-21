@@ -26,8 +26,15 @@ body {
   text-decoration: none;
 }
 
+
 .hero-background {
-  background: url("../images/bg1.png");
+  background: url("../images/kerb-bg-small.jpg");
+  background-size: cover;
+  background-position: top left;
+}
+
+.truck-background {
+  background: url("../images/kerb-trucks-Mar20-wbgr.jpg");
   background-size: cover;
   background-position: top left;
 }
