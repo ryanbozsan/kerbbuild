@@ -18,6 +18,7 @@
             <!-- <a class="navbar-item" href="#">Contact Us</a> -->
             <a class="navbar-item" href="#insurance">Insurance</a>
             <a class="navbar-item" href="#storage">Storage</a>
+            <a class="navbar-item" href="#locations">Locations</a>
 
             <a class="navbar-item" style="cursor: pointer" v-scroll-to="{
                 el: '#form',
@@ -520,9 +521,9 @@
         <img class="imac-screen img-responsive" src="src/assets/images/kerb-trucks-Mar20-wbgr.jpg">
   </div>
 
-<!-- Kerb™ FEATURES -->
+<!-- Kerb™ LOCATIONs -->
 
-    <div id="features" class="features-section">
+    <div id="locations" class="features-section">
       <div class="features-container row">
         <h2 class="features-headline">Kerb™ Locations</h2>
         
