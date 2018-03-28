@@ -343,7 +343,7 @@
             <img class="feature-img" src="src/assets/images/icon-3.png">
           </div>
           <h5 class="feature-head-text  "> INSURANCE </h5>
-          <p class="feature-subtext light  "> A Tricky Topic In The Moving Industry, But Not With Kerb™ We Include Moving Insurance!</p>
+          <p class="feature-subtext light  "> A Tricky Topic In The Moving Industry, But Not With Kerb™ We Include "Kerb Cover"</p>
         </div>
 
         <div class="col-sm-3 feature">
@@ -446,7 +446,7 @@
       <div class="col-sm-6">
         <img class="imac-screen img-responsive" src="src/assets/images/storage-bw.jpg">
         <div class="text-center">
-          <h3 style="margin-top:-40px;">Hire Kerb™ = Rest Assured. </h3>
+          <h3 style="margin-top:-40px;">Get Kerb™ Storage Today </h3>
           <a><button v-scroll-to="{
               el: '#form',
               offset: -112
@@ -519,6 +519,60 @@
  <div class="container">
         <img class="imac-screen img-responsive" src="src/assets/images/kerb-trucks-Mar20-wbgr.jpg">
   </div>
+
+<!-- Kerb™ FEATURES -->
+
+    <div id="features" class="features-section">
+      <div class="features-container row">
+        <h2 class="features-headline">Kerb™ Locations</h2>
+        
+        <div class="col-sm-3 feature">
+          <div class="">
+            <img class="img-responsive" src="src/assets/images/gardena-kerb.jpg">
+          </div>
+          <h5 class="feature-head-text "> Gardena, CA </h5>
+          <p class="feature-subtext light "> 367 E Alondra Blvd, Gardena, CA 90248</p>
+        </div>
+        
+        <div class="col-sm-3 feature">
+          <div class="">
+            <img class="img-responsive" src="src/assets/images/corona-kerb.jpg">
+          </div>
+          <h5 class="feature-head-text  "> Corona, CA </h5>
+          <p class="feature-subtext light  "> 1826 Wild Turkey Cir, Corona, CA 92880</p>
+        </div>
+
+        <div class="col-sm-3 feature">
+          <div class="">
+            <img class="img-responsive" src="src/assets/images/portland-kerb.jpg">
+          </div>
+          <h5 class="feature-head-text  "> Portland, OR </h5>
+          <p class="feature-subtext light  "> 5317 NE 105th Ave, Portland, OR 97220</p>
+        </div>
+
+        <div class="col-sm-3 feature">
+          <div class="">
+            <img class="img-responsive" src="src/assets/images/pittsburgh-kerb.jpg">
+          </div>
+          <h5 class="feature-head-text  "> Pittsburgh, PA </h5>
+          <p class="feature-subtext light  "> 2 South 6th, Pittsburgh, PA, 15203</p>
+        </div>
+
+       
+
+            <!--  <a>
+              <button v-scroll-to="{
+                el: '#form',
+                offset: -112
+              }" v-if="!formVisible" @click="changeFormVisible" class="hero-btn"> Book Kerb™ </button>
+            </a>
+            <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/>
+ -->
+      </div> 
+    </div>  
+
+
+
 
  <!-- Footer -->
     <div class="footer">
