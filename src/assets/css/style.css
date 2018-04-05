@@ -273,11 +273,18 @@ body {
 }
 
 .seal-img {
-  max-width: 90px;
-  left: -35px;
+  /*max-width: 90px;*/
+  left: 5px;
   z-index: 999;
   position: relative;
 
+}
+
+.bbb-img {
+  /*max-width: 90px;*/
+  left: -11px;
+  z-index: 999;
+  position: relative;
 }
 
 .white-section {

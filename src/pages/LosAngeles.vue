@@ -35,7 +35,7 @@
             <h1 class="header-headline">
              
               <b-btn v-b-tooltip.hover style="cursor: pointer" title="Free move Up to $1,000 if we are more than 15 minutes late outside of the provided arrival window (the specified arrival window can be found on your confirmation document)    Example: if the time of arrival window is 9-10am then an arrival of 10:20 am would qualify for a free move of up to $1,000">
-                On Time<br>
+                - On Time<br>
                 Service or<br>
                 Your Move is<br>
                 Free!
@@ -48,7 +48,6 @@
                 offset: -112
               }" v-if="!formVisible" @click="changeFormVisible" class="hero-btn"> Book Kerb™ </button>
             </a>
-            <!-- <img class="seal-img" v-if="!formVisible" src="src/assets/images/secure-seal.png"/> -->
 
           </div>
           <div class="col-sm-6 col-sm-6 ipad">
@@ -447,7 +446,7 @@
       <div class="col-sm-6">
         <img class="imac-screen img-responsive" src="src/assets/images/storage-bw.jpg">
         <div class="text-center">
-          <h3 style="margin-top:-40px;">Get Kerb™ Storage Today </h3>
+          <h3 style="margin-top:-40px;">Get Kerb™ Storage </h3>
           <a><button v-scroll-to="{
               el: '#form',
               offset: -112
@@ -558,8 +557,7 @@
           <h5 class="feature-head-text  "> Pittsburgh, PA </h5>
           <p class="feature-subtext light  "> 2 South 6th, Pittsburgh, PA, 15203</p>
         </div>
-
-       
+      
 
             <!--  <a>
               <button v-scroll-to="{
@@ -598,15 +596,19 @@
                     <a href="https://www.twitter.com/kerb_inc" target="_blank"> <i class="fa fa-twitter icon22"></i> </a>
                     <a href="https://www.instagram.com/kerbmoving/" target="_blank"> <i class="fa fa-instagram icon22"></i>  </a>
                     <a href="https://www.linkedin.com/company/18461025/" target="_blank"> <i class="fa fa-linkedin-square icon22"></i>  </a>
-                  
+                     
                 </div>
-
+                
           </div>
         </div>
 
         <div class="row">          
           <div class="col-sm-12 webscope">
             <br>
+            <a href="https://www.bbb.org/losangelessiliconvalley/business-reviews/moving-and-storage-companies/kerb-in-tarzana-ca-870623" target="_blank"><img class="bbb-img" src="src/assets/images/bbb_logo.png"></a>
+            <a href="https://www.authorize.net" target="_blank"><img class="seal-img"  src="src/assets/images/authorize_net_70.png"/></a>
+
+            <br><br>
             <span class="feature-subtext light">- License# 0191684- </span><br>
             <span class="feature-subtext light">© 2018 Kerb™ Moving. All rights reserved.</span> 
              <!-- <a href="/privacy-policy.html" target="_blank"> Privacy Policy</a> -->
@@ -615,11 +617,16 @@
           </div>          
         </div>
 
+
       </div>
     </div>    <!-- FOOTER -->
 
   </div>
 </template>
+
+
+
+
 
 <script>
 
