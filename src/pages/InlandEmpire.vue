@@ -561,7 +561,7 @@ export default {
         return
       }
       vm.validationMessage = ''
-      vm.axios.post('https://admin.movingreservation.com/kerb/get-availability', {
+      vm.axios.post('https://kerb.movingreservation.com/kerb/get-availability', {
         zipFrom: vm.form.pickUp.zip,
         zipTo: vm.form.dropOff.zip,
         date: vm.form.date,
@@ -607,7 +607,7 @@ export default {
         'billing zip code': vm.form.cardZip
       }).then(result => {
         if (result) {
-          vm.axios.post('https://admin.movingreservation.com/kerb/book', vm.form).then(function (response) {
+          vm.axios.post('https://kerb.movingreservation.com/kerb/book', vm.form).then(function (response) {
             if (response.data.success === true) {
               vm.moveId = response.data.move_id
               vm.formStep = 4
