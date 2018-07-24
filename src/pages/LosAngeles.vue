@@ -165,7 +165,7 @@
               <div class="men-buttons row">
                 <a v-for="(price, movers) in availability.prices" :key="movers" 
                     @click="selectPrice(movers, price)" 
-                    :class="{ 'dis-but': parseInt(availability.movers.left) < movers }">
+                    :class="{ 'dis-but': parseInt(availability.movers_left) < movers }">
                   <div class="col-sm-12 col-md-4 text-center">
                     <div class="mbutton">
                       <h2><i class="fa fa-user-o"></i>{{ movers }}<span>movers</span><span></span></h2>
@@ -557,7 +557,6 @@
           <h5 class="feature-head-text  "> Pittsburgh, PA </h5>
           <p class="feature-subtext light  "> 2 South 6th, Pittsburgh, PA, 15203</p>
         </div>
-      
 
             <!--  <a>
               <button v-scroll-to="{
@@ -571,8 +570,6 @@
     </div>  
 
 
-
-
  <!-- Footer -->
     <div class="footer">
       <div class="container">
@@ -581,7 +578,6 @@
             <!-- <a class="navbar-item" href="#team">Team Kerb™</a> -->
             <!-- <a class="navbar-item" href="#features">Our Features</a> -->
             <a class="navbar-item" href="https://www.indeedjobs.com/kerb-moving/_hl/en_US" target="_blank">Careers</a>
-            
             
             <router-link class="navbar-item1" to="/Privacy-policy" target="_blank">Privacy Policy</router-link>
   
@@ -617,16 +613,11 @@
           </div>          
         </div>
 
-
       </div>
     </div>    <!-- FOOTER -->
 
   </div>
 </template>
-
-
-
-
 
 <script>
 
@@ -825,15 +816,19 @@ export default {
         date: vm.form.date,
         moveSize: vm.form.moveSize
       }).then(function (response) {
-        if (response.data) {
-          if (response.data.out_of_service === 1) {
+        if (response.status === 200) {
+          if (response.data.data.out_of_service === 1) {
             vm.validationMessage = 'We don\'t serve this area.'
-          } else if (parseInt(response.data.trucks.left) < 1) {
+          } else if (parseInt(response.data.data.trucks_left) < 1) {
             vm.validationMessage = 'Selected date is not available.'
           } else {
-            vm.availability = response.data
+            vm.availability = response.data.data
             vm.formStep = 2
           }
+        } else if (response.status === 400) {
+          vm.validationMessage = response.data.message
+        } else {
+          vm.validationMessage = 'Unexpected error. Please try again.'
         }
       })
     },
@@ -843,7 +838,7 @@ export default {
     },
 
     selectPrice (movers, price) {
-      if (parseInt(this.availability.movers.left) >= movers) {
+      if (parseInt(this.availability.movers_left) >= movers) {
         this.form.movers = movers
         this.form.price = price
         this.formStep = 3
@@ -866,11 +861,13 @@ export default {
       }).then(result => {
         if (result) {
           vm.axios.post('https://kerb.movingreservation.com/kerb/book', vm.form).then(function (response) {
-            if (response.data.success === true) {
-              vm.moveId = response.data.move_id
+            if (response.status === 400) {
+              vm.validationMessage = 'Payment unsuccessfull.'
+            } else if (response.status === 200) {
+              vm.moveId = response.data.data.move_id
               vm.formStep = 4
             } else {
-              vm.validationMessage = 'Payment unsuccessfull.'
+              vm.validationMessage = 'Unexpected error. Please try again.'
             }
           })
         }
