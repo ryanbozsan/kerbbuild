@@ -134,12 +134,15 @@
               <div class="men-buttons row">
                 <a v-for="(price, movers) in availability.prices" :key="movers" 
                     @click="selectPrice(movers, price)" 
-                    :class="{ 'dis-but': parseInt(availability.movers_left) < movers }">
+                    :class="{ 'dis-but': availability.movers_left < movers }">
                   <div class="col-sm-12 col-md-4 text-center">
                     <div class="mbutton">
                       <h2><i class="fa fa-user-o"></i>{{ movers }}<span>movers</span><span></span></h2>
                       <h3><span>$</span>{{ price }}<span>/hr</span></h3>
                     </div>
+                    <p style="color: white" v-if="(availability.movers_left < movers) || availability.trucks_left < 1">
+                      Sorry, but this option is not available.
+                    </p>
                   </div>
                 </a>
               </div>
@@ -578,12 +581,21 @@ export default {
         if (response.status === 200) {
           if (response.data.data.out_of_service === 1) {
             vm.validationMessage = 'We don\'t serve this area.'
-          } else if (parseInt(response.data.data.trucks_left) < 1) {
-            vm.validationMessage = 'Selected date is not available.'
-          } else {
-            vm.availability = response.data.data
-            vm.formStep = 2
+            return
           }
+
+          if (response.data.data.long_distance === 1) {
+            vm.validationMessage = 'It\'s a long distance job. Please give us a call.'
+            return
+          }
+
+          if (response.data.data.trucks_left < 1) {
+            vm.validationMessage = 'Selected date is not available.'
+            return
+          }
+
+          vm.availability = response.data.data
+          vm.formStep = 2
         } else if (response.status === 400) {
           vm.validationMessage = response.data.message
         } else {
