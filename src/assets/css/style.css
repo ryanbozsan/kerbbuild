@@ -31,6 +31,7 @@ body {
   background: url("../images/kerb-bg-small.jpg");
   background-size: cover;
   background-position: top left;
+  height: 700px;
 }
 
 .truck-background {
