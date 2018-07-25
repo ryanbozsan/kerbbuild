@@ -569,7 +569,7 @@ export default {
       }
       vm.validationMessage = ''
       vm.axios.post('https://kerb.movingreservation.com/kerb/get-availability', {
-        companyId: vm.form.companyId,
+        companyId: 870,
         zipFrom: vm.form.pickUp.zip,
         zipTo: vm.form.dropOff.zip,
         date: vm.form.date,
