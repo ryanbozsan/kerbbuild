@@ -8,7 +8,7 @@ import Privacypolicy from './pages/Privacy-policy.vue'
 import VueRouter from 'vue-router'
 
 let router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   routes: [
     {
       path: '/',
