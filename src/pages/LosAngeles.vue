@@ -300,6 +300,16 @@
           <h5 class="feature-head-text  "> Pittsburgh, PA </h5>
           <p class="feature-subtext light  "> 2 South 6th, Pittsburgh, PA, 15203</p>
         </div>
+        
+        
+        <div class="col-sm-3 feature">
+          <div class="">
+            <img class="img-responsive" src="src/assets/images/denver-kerb.jpg">
+          </div>
+          <h5 class="feature-head-text  "> Denver, CO </h5>
+          <p class="feature-subtext light  ">  , Denver, CO, 80014</p>
+        </div>
+        
 
             <!--  <a>
               <button v-scroll-to="{
