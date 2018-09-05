@@ -307,7 +307,7 @@
             <img class="img-responsive" src="src/assets/images/denver-kerb.jpg">
           </div>
           <h5 class="feature-head-text  "> Denver, CO </h5>
-          <p class="feature-subtext light  ">  , Denver, CO, 80014</p>
+          <p class="feature-subtext light  ">  1400 16th St Mall, Denver, CO, 80202</p>
         </div>
         
 
